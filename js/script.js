@@ -551,27 +551,24 @@
 
             submitHandler: function (form) {
                 $("#loader").css("display", "inline-block");
-                $.ajax({
-                    type: "POST",
-                    url: "mail.php",
-                    data: $(form).serialize(),
-                    success: function () {
-                        $( "#loader").hide();
-                        $( "#success").slideDown( "slow" );
-                        setTimeout(function() {
-                        $( "#success").slideUp( "slow" );
-                        }, 3000);
-                        form.reset();
-                    },
-                    error: function() {
-                        $( "#loader").hide();
-                        $( "#error").slideDown( "slow" );
-                        setTimeout(function() {
-                        $( "#error").slideUp( "slow" );
-                        }, 3000);
-                    }
-                });
-                return false; // required to block normal submit since you used ajax
+								Email.send({
+									Host: "smtp.gmail.com",
+									Username : "nerimewedding@gmail.com",
+									Password : "vYzhy9-qekbyv-qirreh",
+									To : 'rebeccasmall4@gmail.com, nericc_15@yahoo.com',
+									From : "nerimewedding@gmail.com",
+									Subject : "RSVP Wedding",
+									Body : "<p>You have a new RSVP</p><br/><p>" + form.$name + " will be attending " + form.$events + " with " + form.$guest + "guests.</p><br/><br/><p>" + form.$notes + "</p>",
+								}).then( function () {
+										$( "#loader").hide();
+										$( "#success").slideDown( "slow" );
+										setTimeout(function() {
+										$( "#success").slideUp( "slow" );
+										}, 3000);
+										form.reset();
+									});
+
+                return true; // required to block normal submit since you used ajax
             }
 
         });

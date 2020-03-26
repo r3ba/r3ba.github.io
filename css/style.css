@@ -3023,18 +3023,21 @@ a:focus {
 @media (max-width: 991px) {
   .inportant-people-section .tab-content .grid {
     width: 50%;
+    float: left;
   }
 }
 
 @media (max-width: 767px) {
   .inportant-people-section .tab-content .grid {
     padding: 0 7.5px 0;
+    float: left;
   }
 }
 
 @media (max-width: 550px) {
   .inportant-people-section .tab-content .grid {
     width: 100%;
+    float: left;
   }
 }
 
@@ -3043,6 +3046,7 @@ a:focus {
   .inportant-people-section .tab-content .grid-wrapper > .grid:nth-child(5),
   .inportant-people-section .tab-content .grid-wrapper > .grid:nth-child(6) {
     margin-top: 30px;
+    float: left;
   }
 }
 
@@ -3052,6 +3056,7 @@ a:focus {
   .inportant-people-section .tab-content .grid-wrapper > .grid:nth-child(5),
   .inportant-people-section .tab-content .grid-wrapper > .grid:nth-child(6) {
     margin-top: 30px;
+    float: left;
   }
 }
 
@@ -3061,9 +3066,11 @@ a:focus {
   .inportant-people-section .tab-content .grid-wrapper > .grid:nth-child(5),
   .inportant-people-section .tab-content .grid-wrapper > .grid:nth-child(6) {
     margin-top: 0;
+    float: left;
   }
   .inportant-people-section .tab-content .grid-wrapper > .grid + .grid {
     margin-top: 30px;
+    float: left;
   }
 }
 

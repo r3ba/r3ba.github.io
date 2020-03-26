@@ -580,6 +580,55 @@ a:focus {
   background-color: #ffe6f2;
 }
 
+.my-button-inverse {
+  text-align: center;
+}
+
+.my-button-inverse {
+  background-color: #d9bac9;
+  height: 45px;
+  line-height: 45px;
+  font-size: 16px;
+  font-size: 0.88889rem;
+  font-weight: 600;
+  color: #fff;
+  padding: 0 15px;
+  border: 0;
+  outline: 0;
+  text-transform: uppercase;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media (max-width: 991px) {
+  .my-button {
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+    font-size: 0.83333rem;
+  }
+}
+
+.my-button-inverse:hover {
+  background-color: #003366;
+}
+
+.travel-link {
+  color: #ffe6f2;
+}
+
+.travel-link:hover {
+  color: #d9bac9;
+}
+
 .form input,
 .form textarea,
 .form select {
